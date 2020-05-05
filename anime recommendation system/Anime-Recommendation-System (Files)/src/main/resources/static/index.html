@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Anime Suggestion</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm" id="nav1">
+        <a class="navbar-brand" href="index.html">
+            <img src="site-logo.png" alt="site_logo" srcset="" style="width: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" style="font-family:animeFont1; font-size:1.25rem;  letter-spacing: 3px;"
+                        href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " style="font-family:animeFont1; font-size:1.25rem; ; letter-spacing: 3px;"
+                        href="new_to_anime.html">NEW TO ANIME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " style="font-family:animeFont1; font-size:1.25rem; ; letter-spacing: 3px;"
+                        href="about.html">ABOUT US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark hide" id="nav2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form id="anime_form">
+                <div class="form-inline ml-2">
+                    <div class="col col-md-auto ml-3 mr-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Genre</label>
+                            </div>
+                            <select class="form-control" id="inputGroupSelect01" required>
+                                <option value="">Choose</option>
+                                <option value="Action">Action</option>
+                                <option value="Adventure">Adventure</option>
+                                <option value="Cars">Cars</option>
+                                <option value="Cartoon">Cartoon</option>
+                                <option value="Comedy">Comedy</option>
+                                <option value="Dementia">Dementia</option>
+                                <option value="Demons">Demons</option>
+                                <option value="Drama">Drama</option>
+                                <option value="Dub">Dub</option>
+                                <option value="Ecchi">Ecchi</option>
+                                <option value="Fantasy">Fantasy</option>
+                                <option value="Game">Game</option>
+                                <option value="Harem">Harem</option>
+                                <option value="Historical">Historical</option>
+                                <option value="Horror">Horror</option>
+                                <option value="Josei">Josei</option>
+                                <option value="Kids">Kids</option>
+                                <option value="Magic">Magic</option>
+                                <option value="Martial Arts">Martial Arts</option>
+                                <option value="Mecha">Mecha</option>
+                                <option value="Military">Military</option>
+                                <option value="Movie">Movie</option>
+                                <option value="Music">Music</option>
+                                <option value="Mystery">Mystery</option>
+                                <option value="ONA">ONA</option>
+                                <option value="OVA">OVA</option>
+                                <option value="Parody">Parody</option>
+                                <option value="Police">Police</option>
+                                <option value="Psychological">Psychological</option>
+                                <option value="Romance">Romance</option>
+                                <option value="Samurai">Samurai</option>
+                                <option value="School">School</option>
+                                <option value="Sci-Fi">Sci-Fi</option>
+                                <option value="Seinen">Seinen</option>
+                                <option value="Shoujo">Shoujo</option>
+                                <option value="Shoujo Ai">Shoujo Ai</option>
+                                <option value="Shounen">Shounen</option>
+                                <option value="Shounen Ai">Shounen Ai</option>
+                                <option value="Slice of Life">Slice of Life</option>
+                                <option value="Space">Space</option>
+                                <option value="Special">Special</option>
+                                <option value="Sports">Sports</option>
+                                <option value="Super Power">Super Power</option>
+                                <option value="Supernatural">Supernatural</option>
+                                <option value="Thriller">Thriller</option>
+                                <option value="Vampire">Vampire</option>
+                                <option value="Yuri">Yuri</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col col-md-auto ml-3 mr-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Experience</label>
+                            </div>
+                            <select class="form-control" id="inputGroupSelect02" required>
+                                <option value="">Choose</option>
+                                <option value="1">1 year</option>
+                                <option value="2">2 year</option>
+                                <option value="3">3 year</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col col-md-auto ml-3 mr-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Sub-Genre</label>
+                            </div>
+                            <select class="form-control" id="inputGroupSelect03" required>
+                                <option value="">Choose</option>
+                                <option value="Mainstream">Mainstream</option>
+                                <option value="Unorthodox">Unorthodox</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col col-md-auto ml-2">
+                        <button type="button" class="btn btn-danger btn-md"
+                            style="font-weight:bold; font-family: cursive;" onclick="animeList()"><i
+                                class="fa fa-search"></i> SEARCH</button>
+                    </div>
+                    <div class="col col-md-auto ml-2">
+                        <button type="button" class="btn btn-danger btn-md" data-toggle="modal"
+                            data-target="#exampleModalCenter" style="font-weight:bold; font-family: cursive;"
+                            onclick="random()"><i class="fa fa-dice"></i> RANDOM ANIME
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </nav>
+    <div class="container" id="div1">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-primary">RANDOM ANIME</h2>
+                <p class="text-light" style="font-weight:600;">Smash that generate random list button and let fate
+                    decide what show you are going
+                    to watch. If you don’t adjust any settings on the form, a random list of all the anime stored on the
+                    site will be built. This is perfect if you want to branch out to different kind of anime.</p>
+                <button type="button" class="btn btn-success btn-block" data-toggle="modal"
+                    data-target="#exampleModalCenter" onclick="random()"
+                    style="font-family: cursive; font-weight: bold;">LEAVE IT TO FATE !</button>
+            </div>
+            <div class="col">
+                <h2 class="text-primary">RANDOM LIST</h2>
+                <p class="text-light" style="font-weight:600;">You know what you like, and want to find a show that fits
+                    your taste. Use the
+                    dropdowns to include or exclude genres based on your preference. You can also click the advanced
+                    form option to gain more control. The result is a bunch of new anime that you know you are going to
+                    enjoy.</p>
+                <button type="button" class="btn btn-success btn-block" onclick="fadeOutEffect()"
+                    style="font-family: cursive; font-weight: bold;">DECIDE YOUR DESTINY !</button>
+            </div>
+        </div>
+    </div>
+    <div id="card_slider" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner" id="carousel_inner_item">
+        </div>
+    </div>
+    <a class="carousel-control-prev hide" href="#card_slider" role="button" data-slide="prev" id="btn1"
+        style="margin-top: 200px; margin-bottom: 200px;">
+        <span class="fas fa-angle-left  text-primary" style="font-size: 4rem;font-weight: bold;"></span>
+    </a>
+    <a class="carousel-control-next hide" href="#card_slider" role="button" data-slide="next" id="btn2"
+        style="margin-top: 200px; margin-bottom: 200px;">
+        <span class="fas fa-angle-right text-primary" style="font-size: 4rem;font-weight: bold;"></span>
+    </a>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" style="padding:120px;" aria-hidden="true">
+
+        <div class="col-12" style="margin-left: 50px;">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="width: 350px;
+            height: 515px;">
+                    <div class="card shadow p-0" id="card_img">
+                        <img id="modal_img" src="" alt="anime_img" style="width: 345px;
+                        height: 515px;">
+                        <div class="card-body" id="anime_body">
+                            <h3 class="card-title text-dark" id="anime_name"></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
